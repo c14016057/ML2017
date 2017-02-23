@@ -5,12 +5,12 @@ b = open (sys.argv[2], "r")
 ans = open("ans_one.txt", "w")
 matrixA = []
 for line in a:
-	matrixA.append ([int (v) for v in line.split ()])
+	matrixA.append ([int (v) for v in line.split (",")])
 row = len (matrixA)
 mid = len (matrixA[0])
 matrixB = []
 for line in b:
-	matrixB.append ([int (v) for v in line.split ()])
+	matrixB.append ([int (v) for v in line.split (",")])
 col = len (matrixB[0])
 matrixC = []
 for i in range (0, row, 1):
